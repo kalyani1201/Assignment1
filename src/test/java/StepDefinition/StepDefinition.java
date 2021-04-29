@@ -61,7 +61,7 @@ public void enter_data() throws Throwable {
 		driver.findElement(By.xpath("//input[@id='registration_lastname']")).sendKeys("ch");
 		driver.findElement(By.xpath("//*[@id='registration_email']")).sendKeys("chavalikalyani@gmail.com");
 		
-		driver.findElement(By.xpath("//*[@id=\"username\"]")).sendKeys("kkd941222");
+		driver.findElement(By.xpath("//*[@id=\"username\"]")).sendKeys("kkd971222");
 		driver.findElement(By.xpath("//*[@id='pass1']")).sendKeys("Kalyani1122@");
 		driver.findElement(By.xpath("//*[@id='pass2']")).sendKeys("Kalyani1122@");
 
@@ -171,6 +171,8 @@ public void sendmessage() throws Throwable {
 	driver.switchTo().frame(frame);
 	driver.findElement(By.xpath("//body")).click();
 	driver.findElement(By.xpath("//body/p")).sendKeys("body");
+	driver.switchTo().defaultContent();
+	driver.findElement(By.xpath("//*[@id='compose_message_compose']")).click();
 	
    
 }
